@@ -9,7 +9,7 @@
 	"rules": {
 		// possible errors
 		"comma-dangle": [2, "never"],
-		"no-cond-assgin": 2,
+		"no-cond-assign": 2,
 		"no-console": 0,
 		"no-constant-condition": 1,
 		"no-control-regex": 0,
