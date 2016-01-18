@@ -1,8 +1,9 @@
 #! /bin/sh
 
+CWD=`dirname $0`
 PROJECT_ROOT=$1
 
-cp eslintrc.node.json ${PROJECT_ROOT}/.eslintrc.json
-cp eslintrc.mocha.json ${PROJECT_ROOT}/test/.eslintrc.json
+cp ${CWD}/eslintrc.node.json ${PROJECT_ROOT}/.eslintrc.json
+cp ${CWD}/eslintrc.mocha.json ${PROJECT_ROOT}/test/.eslintrc.json
 
 echo '...done!'
