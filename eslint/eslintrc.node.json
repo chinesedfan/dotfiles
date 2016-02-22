@@ -38,6 +38,8 @@
 			"prefer": {
 				"returns": "return"
 			},
+			"requireParamDescription": false,
+			"requireReturnDescription": false,
 			"requireReturn": false
 		}],
 		"valid-typeof": 2,
@@ -112,11 +114,11 @@
 		"no-undef-init": 2,
 		"no-undef": 2,
 		"no-undefined": 2,
-		"no-unused-vars": 1,
+		"no-unused-vars": [1, {"argsIgnorePattern": "^next$"}],
 		"no-use-before-define": [1, "nofunc"],
 		// node.js and commonjs
 		"callback-return": 0,
-		"global-require": 1,
+		"global-require": 0,
 		"handle-callback-err": 0,
 		"no-mixed-requires": 0,
 		"no-new-require": 0,
@@ -144,7 +146,7 @@
 		"linebreak-style": 2,
 		"lines-around-comment": 0,
 		"max-depth": 0,
-		"max-len": [1, 110, 4],
+		"max-len": 0,
 		"max-nested-callbacks": 0,
 		"max-params": 0,
 		"max-statments": 0,
