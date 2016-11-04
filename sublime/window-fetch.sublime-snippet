@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+window.fetch(${1:path}, {
+    data: {$2}
+}).then((json) => {
+    if (!json || json.code != 200) {
+        Toast((json && json.msg) || '服务器开小差了');
+        return;
+    }
+
+    ${3}
+}).catch(() => {
+    Toast('服务器累趴了');
+});
+]]></content>
+    <tabTrigger>wf</tabTrigger>
+    <scope>source.js</scope>
+    <description>window fetch</description>
+</snippet>

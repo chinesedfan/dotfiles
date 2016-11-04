@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+yield this.fetch(${1:path}, {
+    data: {$2}
+}).then((json) => {
+    if (!json || json.code != 200) throw new Error(JSON.stringify(json));
+    return json.msg;
+}).catch(() => {
+    return {};
+});
+]]></content>
+    <tabTrigger>yf</tabTrigger>
+    <scope>source.js</scope>
+    <description>yield fetch</description>
+</snippet>
