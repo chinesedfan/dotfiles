@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+<ul className="$1">
+{ _.map(${2:list}, (item, i) => {
+    return <li className="$3" key={i}>$4</li>;
+}) }
+</ul>
+]]></content>
+    <tabTrigger>rul</tabTrigger>
+    <scope>source.js</scope>
+    <description>React ul</description>
+</snippet>
