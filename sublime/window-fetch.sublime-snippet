@@ -15,5 +15,5 @@ window.fetch(${1:path}, {
 ]]></content>
     <tabTrigger>wf</tabTrigger>
     <scope>source.js</scope>
-    <description>window fetch</description>
+    <description>Window Fetch</description>
 </snippet>

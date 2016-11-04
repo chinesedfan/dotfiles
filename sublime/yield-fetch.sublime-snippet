@@ -11,5 +11,5 @@ yield this.fetch(${1:path}, {
 ]]></content>
     <tabTrigger>yf</tabTrigger>
     <scope>source.js</scope>
-    <description>yield fetch</description>
+    <description>Yield Fetch</description>
 </snippet>
