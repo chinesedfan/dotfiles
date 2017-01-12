@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+static ${1:contextTypes} = {
+    ${2:legoWidgetId}: React.PropTypes.${3:string}
+};
+]]></content>
+    <tabTrigger>lct</tabTrigger>
+    <scope>source.js</scope>
+    <description>Lego Context Types</description>
+</snippet>

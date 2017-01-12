@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+componentDidMount() {
+    Lego.registOwnReducer(this.context.legoWidgetId, ownReducer);
+}
+]]></content>
+    <tabTrigger>lc</tabTrigger>
+    <scope>source.js</scope>
+    <description>Lego componentDidMount</description>
+</snippet>

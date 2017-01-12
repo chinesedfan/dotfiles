@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+const ${1:Lego} = require('${2:@gfe/lego}');
+]]></content>
+    <tabTrigger>rl</tabTrigger>
+    <scope>source.js</scope>
+    <description>require Lego</description>
+</snippet>

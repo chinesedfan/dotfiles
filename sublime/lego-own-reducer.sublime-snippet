@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+function ${1:ownReducer}(state, action) {
+    switch (action.type) {
+    case $2:
+        return {
+            ...state,
+            $3
+        };
+    default:
+        return state;
+    }
+}
+]]></content>
+    <tabTrigger>rd</tabTrigger>
+    <scope>source.js</scope>
+    <description>Reducer</description>
+</snippet>
