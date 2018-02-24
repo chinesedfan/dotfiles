@@ -2,6 +2,10 @@
 
 alias ll='ls -l'
 
+alias atom='/Applications/Atom.app/Contents/MacOS/Atom'
+alias subl='/Applications/SublimeText.app/Contents/SharedSupport/bin/subl'
+alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
+
 export CLICOLOR=1
 export LSCOLORS=exgxbxxxcxxxxxxxxxxxxx
 
