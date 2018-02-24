@@ -2,6 +2,8 @@
 
 alias ll='ls -l'
 
+alias gcr='_gcr() { git fetch https://github.com/$1.git $2 && git checkout -b $2 FETCH_HEAD; }; _gcr'
+
 alias atom='/Applications/Atom.app/Contents/MacOS/Atom'
 alias subl='/Applications/SublimeText.app/Contents/SharedSupport/bin/subl'
 alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
