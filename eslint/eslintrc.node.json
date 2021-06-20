@@ -1,6 +1,7 @@
 {
-	"parser": "babel-eslint",
+	"parser": "@babel/eslint-parser",
 	"parserOptions": {
+		"requireConfigFile": false,
 		"ecmaVersion": 10,
 		"ecmaFeatures": {
 			"jsx": true
