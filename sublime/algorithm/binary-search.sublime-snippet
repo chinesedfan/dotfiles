@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+function binarySearch(l, r, fn) {
+    while (l <= r) {
+        const m = Math.floor((l + r) / 2)
+        if (fn(m)) {
+            l = m + 1
+        } else {
+            r = m - 1
+        }
+    }
+    return r
+}
+]]></content>
+    <tabTrigger>bs</tabTrigger>
+    <scope>source.js</scope>
+    <description>Binary Search</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+const adj = {}
+edges.forEach(([a, b]) => {
+    adj[a] = adj[a] || []
+    adj[b] = adj[b] || []
+    adj[a].push(b)
+    adj[b].push(a)
+})
+]]></content>
+    <tabTrigger>adj</tabTrigger>
+    <scope>source.js</scope>
+    <description>Graph - Adjacent Table</description>
+</snippet>
