@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+const ${1:arr} = lines[l++].trim().split(' ')${2:.map(Number)}
+]]></content>
+    <tabTrigger>ra</tabTrigger>
+    <scope>source.js</scope>
+    <description>Read Number/String Array</description>
+</snippet>

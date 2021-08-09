@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+const ${2:arr} = lines.slice(l, l + ${1:n}).map(str => str.trim().split(' ')${3:.map(Number)})
+l += ${1}
+]]></content>
+    <tabTrigger>rm</tabTrigger>
+    <scope>source.js</scope>
+    <description>Read Multiple Lines</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+const ${1:n} = ${2:+}lines[l++]
+]]></content>
+    <tabTrigger>rv</tabTrigger>
+    <scope>source.js</scope>
+    <description>Read a Number/String</description>
+</snippet>

@@ -16,18 +16,14 @@ rl.on('close', () => {
     let l = 0;
     let t = +lines[l++]
     for (let i = 0; i < t; i++) {
-        const str = lines[l++]
-        const n = +lines[l++]
-        const args = lines[l++].trim().split(' ').map(Number)
-        const arr = lines.slice(l, l + n).map(str => str.trim().split(' ').map(Number))
-        l += n
-        console.log(solve(args))
+        ${2}
+        console.log(solve(${1:n, arr}))
     }
 // })()
 })
 
-function solve(args) {
-    return args
+function solve(${1}) {
+    return [${1}]
 }
 
 ]]></content>
