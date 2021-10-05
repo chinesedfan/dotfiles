@@ -15,10 +15,12 @@ rl.on('close', () => {
     // const lines = require('fs').readFileSync('test.in', 'utf8').split('\n')
     let l = 0;
     let t = +lines[l++]
+    const output = []
     for (let i = 0; i < t; i++) {
         ${2}
-        console.log(solve(${1:n, arr}))
+        output[i] = solve(${1:n, arr})
     }
+    console.log(output.join('\n'))
 // })()
 })
 
