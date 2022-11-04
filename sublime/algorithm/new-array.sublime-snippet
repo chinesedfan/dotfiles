@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+const ${1:dp} = Array(${2}) //.fill(0).map(() => Array(${3}))
+]]></content>
+    <tabTrigger>na</tabTrigger>
+    <scope>source.js</scope>
+    <description>New Array</description>
+</snippet>

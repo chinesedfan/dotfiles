@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[BigInt($1)]]></content>
+    <tabTrigger>bi</tabTrigger>
+    <scope>source.js</scope>
+    <description>BigInt</description>
+</snippet>

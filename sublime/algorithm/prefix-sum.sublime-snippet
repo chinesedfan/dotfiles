@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+const ${1:sum} = Array(n)
+${1}[0] = ${2:arr}[0]
+for (let i = 1; i < arr.length; i++) {
+    ${1}[i] = ${1}[i - 1] + ${2}[i]
+}
+
+function range(l, r) {
+    return ${1}[r] - (${1}[l - 1] || 0)
+}
+]]></content>
+    <tabTrigger>psum</tabTrigger>
+    <scope>source.js</scope>
+    <description>Prefix Sum</description>
+</snippet>

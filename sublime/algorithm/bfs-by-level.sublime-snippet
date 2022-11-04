@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+function bfs(adj, r, visited) {
+    let q = new Queue()
+    q.push(r)
+    visited[r] = 0
+    let d = 1
+    while (q.length) {
+        const nq = new Queue()
+        nq.forEach(u => {
+            ;(adj[u] || []).forEach(v => {
+                if (v in visited) return
+                visited[v] = d
+                nq.push(v)
+            })
+        })
+        q = nq
+        d++
+    }
+}
+]]></content>
+    <tabTrigger>bfs</tabTrigger>
+    <scope>source.js</scope>
+    <description>BFS by level</description>
+</snippet>

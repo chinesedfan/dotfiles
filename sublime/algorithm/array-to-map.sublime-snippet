@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+const ${1:map} = ${2:arr}.reduce((o, x) => {
+    o[x] = 1
+    // o[x] = (o[x] || 0) + 1
+    return o
+}, {})
+]]></content>
+    <tabTrigger>tmap</tabTrigger>
+    <scope>source.js</scope>
+    <description>Array to Map</description>
+</snippet>
