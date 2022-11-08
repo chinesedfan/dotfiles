@@ -7,7 +7,7 @@ function bfs(adj, r, visited) {
     let d = 1
     while (q.length) {
         const nq = new Queue()
-        nq.forEach(u => {
+        q.forEach(u => {
             ;(adj[u] || []).forEach(v => {
                 if (v in visited) return
                 visited[v] = d
