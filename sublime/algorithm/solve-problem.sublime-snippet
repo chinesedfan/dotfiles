@@ -12,7 +12,7 @@ rl.on('line', (input) => {
 })
 rl.on('close', () => {
 // (function() {
-    // const lines = require('fs').readFileSync('test.in', 'utf8').split('\n')
+    // const lines = require('fs').readFileSync('/dev/stdin', 'utf8').split('\n')
     let l = 0;
     let t = +lines[l++]
     const output = []
