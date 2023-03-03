@@ -3,6 +3,7 @@
 function bfs(adj, r, visited) {
     let q = new Queue()
     q.push(r)
+    // don't use n-array if called multiple times
     visited[r] = 0
     let d = 1
     while (q.length) {
@@ -11,7 +12,7 @@ function bfs(adj, r, visited) {
             const nb = adj[u] || []
             for (let i = 0; i < nb.length; i++) {
                 const v = nb[i]
-                if (v in visited) return
+                if (v in visited) continue
                 visited[v] = d
                 nq.push(v)
             }
