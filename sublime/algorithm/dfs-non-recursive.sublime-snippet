@@ -1,35 +1,35 @@
 <snippet>
     <content><![CDATA[
-function dfs(adj, r) {
-// function dfs(g, r) {
+// function dfs(adj, r) {
+function dfs(g, r) {
     // const stack = []
     const stack = new FastQueue()
-    stack.push([r, 0, -1])
-    // const { h, e, ne, d } = g.getRaw() // chain forward star
-    // stack.push([r, h[r], -1])
+    // stack.push([r, 0, -1])
+    const { h, e, ne, d } = g.getRaw() // chain forward star
+    stack.push([r, h[r], -1])
     while (stack.length) {
         // const [u, i, p] = stack[stack.length - 1]
         const [u, i, p] = stack.getLast()
         // visited[u] = 1
 
-        const nb = adj[u] || []
-        if (!i) {
-        // if (i === h[u]) {
+        // const nb = adj[u] || []
+        // if (!i) {
+        if (i === h[u]) {
             // first visited
         }
-        if (i < nb.length) {
-        // if (i !== -1) {
+        // if (i < nb.length) {
+        if (i !== -1) {
             // stack[stack.length - 1][1]++
-            stack.getLast()[1]++
-            // stack.getLast()[1] = ne[i]
+            // stack.getLast()[1]++
+            stack.getLast()[1] = ne[i]
 
-            const v = nb[i]
-            // const v = e[i]
+            // const v = nb[i]
+            const v = e[i]
 
             // if (!visited[v]) { // has circle
             if (v !== p) {
-                stack.push([v, 0, u])
-                // stack.push([v, h[v], u])
+                // stack.push([v, 0, u])
+                stack.push([v, h[v], u])
             }
         } else {
             // last visited
