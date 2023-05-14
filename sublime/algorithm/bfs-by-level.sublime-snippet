@@ -1,13 +1,13 @@
 <snippet>
     <content><![CDATA[
 function bfs(adj, r, visited) {
-    let q = new Queue()
+    let q = new FastQueue()
     q.push(r)
     // don't use n-array if called multiple times
     visited[r] = 0
     let d = 1
     while (q.length) {
-        const nq = new Queue()
+        const nq = new FastQueue()
         q.forEach(u => {
             const nb = adj[u] || []
             for (let i = 0; i < nb.length; i++) {
