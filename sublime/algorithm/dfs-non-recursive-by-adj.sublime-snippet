@@ -1,24 +1,23 @@
 <snippet>
     <content><![CDATA[
-function dfs(g, r) {
+function dfs(adj, r) {
     const stack = new FastQueue()
-    const { h, e, ne, d } = g.getRaw() // chain forward star
-    stack.push([r, h[r], -1])
+    stack.push([r, 0, -1])
     while (stack.length) {
         const [u, i, p] = stack.getLast()
         // visited[u] = 1
 
-        if (i === h[u]) {
+        const nb = adj[u] || []
+        if (!i) {
             // first visited
         }
-        if (i !== -1) {
-            stack.getLast()[1] = ne[i]
+        if (i < nb.length) {
+            stack.getLast()[1]++
 
-            const v = e[i]
-
+            const v = nb[i]
             // if (!visited[v]) { // has circle
             if (v !== p) {
-                stack.push([v, h[v], u])
+                stack.push([v, 0, u])
             }
         } else {
             // last visited
@@ -27,7 +26,7 @@ function dfs(g, r) {
     }
 }
 ]]></content>
-    <tabTrigger>dfs</tabTrigger>
+    <tabTrigger>dfs2</tabTrigger>
     <scope>source.js</scope>
-    <description>DFS Non-Recursive</description>
+    <description>DFS By Adjacent Table</description>
 </snippet>
