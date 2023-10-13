@@ -1,11 +1,11 @@
 <snippet>
     <content><![CDATA[
 const adj = {}
-edges.forEach(([a, b]) => {
-    adj[a] = adj[a] || []
-    adj[b] = adj[b] || []
-    adj[a].push(b)
-    adj[b].push(a)
+edges.forEach(([u, v]) => {
+    adj[u] = adj[u] || []
+    adj[v] = adj[v] || []
+    adj[u].push(v)
+    adj[v].push(u)
 })
 ]]></content>
     <tabTrigger>adj</tabTrigger>
