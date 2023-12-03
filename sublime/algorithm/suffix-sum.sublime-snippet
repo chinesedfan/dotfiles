@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-const ${1:sum} = Array(n)
+const ${1:suffix} = Array(n)
 ${1}[n - 1] = ${2:arr}[n - 1]
 for (let i = n - 2; i >= 0; i--){
     ${1}[i] = ${1}[i + 1] + ${2}[i]
