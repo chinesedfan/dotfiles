@@ -2,6 +2,7 @@
 
 alias ll='ls -l'
 alias nd='node --inspect-brk'
+alias g17='g++ -std=c++17'
 
 alias gcr='_gcr() { git fetch https://github.com/$1.git $2 && git checkout -b $2 FETCH_HEAD; }; _gcr'
 
