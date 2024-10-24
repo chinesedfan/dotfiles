@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-function dfs(adj, r) {
+function dfs(r) {
     const stack = new FastQueue()
     stack.push([r, 0, -1])
     while (stack.length) {

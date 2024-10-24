@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-function bfs(adj, r, visited) {
+function bfs(r, visited) {
     let q = new FastQueue()
     q.push(r)
     // don't use n-array if called multiple times

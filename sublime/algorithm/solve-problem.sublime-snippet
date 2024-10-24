@@ -14,7 +14,8 @@ rl.on('close', () => {
 // (function() {
     // const lines = require('fs').readFileSync('/dev/stdin', 'utf8').split('\n')
     let l = 0;
-    let t = +lines[l++]
+    let t = 1
+    t = +lines[l++]
     const output = []
     for (let i = 0; i < t; i++) {
         ${2}
