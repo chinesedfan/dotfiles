@@ -7,17 +7,17 @@ function bfs(r, visited) {
     visited[r] = 0
     let d = 1
     while (q.length) {
-        const nq = new FastQueue()
-        q.forEach(u => {
+        const sz = q.length
+        for (let j = 0; j < sz; j++) {
+            const u = q.shift()
             const nb = adj[u] || []
             for (let i = 0; i < nb.length; i++) {
                 const v = nb[i]
                 if (v in visited) continue
                 visited[v] = d
-                nq.push(v)
+                q.push(v)
             }
-        })
-        q = nq
+        }
         d++
     }
 }
